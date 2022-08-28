@@ -13,7 +13,7 @@ fn main() {
     println!("First word is \"{}\"", first_word(&buf));
 }
 
-fn first_word (s: &String) -> &str {
+fn first_word (s: &str) -> &str {
     match s.split_whitespace().next() {
         Some(word) => word,
         None => s
